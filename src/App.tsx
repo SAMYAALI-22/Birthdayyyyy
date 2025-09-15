@@ -128,9 +128,6 @@ function App() {
     {
       id: 1,
       url: myVideo,
-      caption: "My special video 🎥",
-      date: "2024",
-      mood: "Memorable",
       type: 'video'
     },
     {
@@ -430,7 +427,7 @@ function App() {
 
             {/* Login Form */}
             <form onSubmit={handleLogin} className="max-w-2xl mx-auto">
-              <div className="glass-strong rounded-3xl p-12 shadow-2xl hover-lift">
+              <div className="rounded-3xl p-12 shadow-2xl hover-lift">
                 <div className="mb-8">
                   <label className="block text-white text-2xl font-medium mb-4">
                     When's your birthday? 🎂
@@ -553,7 +550,7 @@ function App() {
             <span>Birthday Wishes</span>
             <span className="text-4xl">{wishes[currentWish].icon}</span>
           </h2>
-          <div className="glass-strong rounded-3xl p-12 shadow-2xl mb-12 max-w-6xl mx-auto hover-lift">
+          <div className="rounded-3xl p-12 shadow-2xl mb-12 max-w-6xl mx-auto hover-lift">
             <div className={`w-20 h-20 mx-auto bg-gradient-to-r ${wishes[currentWish].color} rounded-3xl flex items-center justify-center shadow-2xl mb-8 neon-glow`}>
               <Heart className="w-10 h-10 text-white" />
             </div>
@@ -589,7 +586,7 @@ function App() {
             <Camera className="w-12 h-12" />
           </h2>
           <div className="max-w-6xl mx-auto">
-            <div className="glass-strong rounded-3xl overflow-hidden shadow-2xl hover-lift">
+            <div className="rounded-3xl overflow-hidden shadow-2xl hover-lift">
               <div className="relative">
                 <div className="relative w-full h-[600px] bg-black">
                   {photos[currentPhotoIndex].type === 'video' ? (
@@ -607,7 +604,6 @@ function App() {
                     />
                   )}
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 
                 <button
                   onClick={prevPhoto}
@@ -624,15 +620,15 @@ function App() {
                 </button>
 
                 <div className="absolute bottom-8 left-8 right-8">
-                  <div className="glass rounded-2xl p-6">
-                    <h3 className="text-white text-3xl font-bold mb-2">
+                  <div className="rounded-2xl p-6">
+                    <h3 className="text-white text-3xl font-bold mb-2 drop-shadow-lg">
                       {photos[currentPhotoIndex].caption}
                     </h3>
                     <div className="flex justify-between items-center">
-                      <p className="text-white/80 text-xl">
+                      <p className="text-white/80 text-xl drop-shadow-lg">
                         {photos[currentPhotoIndex].date}
                       </p>
-                      <span className="px-4 py-2 bg-white/20 rounded-full text-white font-medium">
+                      <span className="px-4 py-2 bg-white/20 rounded-full text-white font-medium backdrop-blur-sm">
                         {photos[currentPhotoIndex].mood}
                       </span>
                     </div>
@@ -784,8 +780,7 @@ function App() {
               Help the birthday boy reach the cake! Use arrow keys or WASD to move through the maze.
             </p>
             
-            {/* Game Controls Info */}
-            <div className="glass-strong rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
+            <div className="rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
               <h3 className={`text-xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
                 🎮 Game Controls
               </h3>
@@ -799,7 +794,7 @@ function App() {
               </div>
             </div>
             
-            <div className="glass-strong rounded-3xl p-8 mb-12 overflow-x-auto hover-lift">
+            <div className="rounded-3xl p-8 mb-12 overflow-x-auto hover-lift">
               <div className="inline-block">
                 <div className="grid grid-cols-10 gap-1 border-4 border-purple-500 rounded-2xl overflow-hidden p-2 bg-gradient-to-br from-purple-900/50 to-blue-900/50">
                   {mazeLayout.map((row, y) =>
@@ -831,7 +826,7 @@ function App() {
             </div>
 
             <div className="flex justify-center space-x-8 mb-12">
-              <div className="glass-strong rounded-2xl p-6 text-center">
+              <div className="rounded-2xl p-6 text-center">
                 <div className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-2">
                   {moves}
                 </div>
@@ -849,7 +844,7 @@ function App() {
             </div>
 
             {gameWon && (
-              <div className="glass-strong rounded-3xl p-12 scale-in">
+              <div className="rounded-3xl p-12 scale-in">
                 <div className="text-8xl mb-6 bounce">🎉</div>
                 <h3 className={`text-4xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
                   Congratulations!
@@ -876,7 +871,7 @@ function App() {
             Made with endless love, creativity, and birthday magic from your sister 💕✨
           </p>
           <div className="mt-12 flex justify-center">
-            <div className="glass-strong rounded-3xl p-8">
+            <div className="rounded-3xl p-8">
               <div className="text-4xl mb-4">💝</div>
               <p className={`text-xl ${theme === 'dark' ? 'text-white/80' : 'text-gray-700'} font-medium`}>
                 "The best gift is having you as my brother"
