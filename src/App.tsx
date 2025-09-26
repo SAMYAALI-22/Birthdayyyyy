@@ -176,40 +176,6 @@ function App() {
     }
   ];
 
-  const wishCards = [
-    {
-      id: 1,
-      name: "Mom",
-      relationship: "Mother",
-      wish: "Happy birthday to my wonderful son! May this year bring you happiness, success, and all the love in the world. You make us so proud every day! 💕",
-      color: "from-pink-500 via-rose-500 to-red-500",
-      avatar: "👩‍💼"
-    },
-    {
-      id: 2,
-      name: "Dad",
-      relationship: "Father",
-      wish: "Son, watching you grow into the amazing person you are today has been the greatest joy of my life. Happy birthday! Keep reaching for the stars! 🌟",
-      color: "from-blue-500 via-indigo-500 to-purple-500",
-      avatar: "👨‍💼"
-    },
-    {
-      id: 3,
-      name: "Grandma",
-      relationship: "Grandmother",
-      wish: "My dear grandson, you bring so much sunshine into our lives! May your special day be filled with love, laughter, and all your favorite things. Happy birthday! 🎂",
-      color: "from-purple-500 via-pink-500 to-rose-500",
-      avatar: "👵"
-    },
-    {
-      id: 4,
-      name: "Best Friend",
-      relationship: "Friend",
-      wish: "Bro, another year of being awesome! Thanks for being such an incredible friend. Here's to many more years of laughter, adventures, and unforgettable memories! 🎈",
-      color: "from-yellow-500 via-orange-500 to-red-500",
-      avatar: "👨‍🎓"
-    }
-  ];
 
   const mazeLayout = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
